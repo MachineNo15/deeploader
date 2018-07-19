@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nice upload form :)</title>
+
+</head>
+
+<style>
+
+body{
+  background-color: black;
+}
+
+#inc{
+  margin: .8cm;
+  border-radius: 100px;
+  width: 50%;
+  height: 50%;
+  background-color: whitesmoke;
+  border: 20px dashed black;
+}
+
+#inc:hover{
+  animation: 5s sc infinite;
+}
+
+#inci{
+  width: 50%;
+  height: 50%;
+  margin: 20px;
+  border-radius: 30px;
+  border: 5px solid yellow;
+  background-color: black;
+}
+
+#inci:hover{
+  margin: 15px;
+  border-radius: 50px;
+  border: 10px dashed red;
+  animation : 3s inr ease-in-out infinite;
+}
+
+#test{
+  background-color: orangered;
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  top: 5cm;
+//  left: 15cm;
+//  box-shadow: 0px 0px 50px -5px ;
+}
+
+#test{
+  left: 13cm;
+  border:50px dashed red; 
+  background-color: black;
+  border-radius: 160px;
+  animation: 5s r linear infinite;
+  transition: 1s border-radius linear;
+}
+
+@keyframes r{
+  0%{
+    transform: rotate(0deg);
+  }
+  
+  50%{
+    transform: rotate(100deg);
+  }
+  
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sc{
+  0%{
+    transform: rotateZ(90deg);
+  }
+  
+  50%{
+    background-color: black;
+    transform: scale(2,2);
+    border-color: red;
+    box-shadow: 0px 0px 15px 10px aqua; 
+ }
+  
+  100%{
+    transform: rotateZ(180deg);
+  }
+}
+
+@keyframes inr{
+  0%{
+    transform: rotateZ(90deg);
+    background-color: black;
+    transform: scale(0.5,0.5);
+    border-color: white;
+  }
+  
+  50%{
+    background-color: black;
+    transform: scale(1,1) rotate(180deg);
+    box-shadow: 0px 0px 20px 10px red; 
+    border-color: red;
+ }
+  
+  100%{
+    transform: rotateZ(180deg);
+    background-color: black;
+    transform: scale(0.5,0.5);
+    border-color: cyan;
+  }
+  
+}
+
+</style>
+
+
+<body>
+
+  
+<main>
+</main>
+<load id="load">
+<div id="test">
+
+<div id="inc">
+	
+<div id="inci"></div>
+</div>
+</div>
+</load>
+</body>
+
+</html>
